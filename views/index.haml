@@ -1,0 +1,7 @@
+%nav
+  %ul
+    - @posts.each do |p|
+      %li
+        %a{ :href => '/' + p.permalink }=p.title
+        %time{ :pubdate => :pubdate }=p.last_updated
+
